@@ -118,10 +118,10 @@ body {
 
 .logo {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800; /* THIS is the big difference */
     color: #fed136;
-    font-size: 1.5rem; /* tweak as needed */
-    letter-spacing: 1px;
+    letter-spacing: 1.5px; /* tweak this */
+    font-size: 1rem; /* adjust to match navbar height */
     margin: 0;
 }
 
