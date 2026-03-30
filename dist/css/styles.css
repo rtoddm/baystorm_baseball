@@ -118,7 +118,9 @@ body {
 
 .logo {
     font-family: "Kaushan Script", cursive;
+    font-weight: 700;
     color: #fed136;
+    letter-spacing: 1px;
     font-size: 1.2rem;
     margin: 0;
 }
