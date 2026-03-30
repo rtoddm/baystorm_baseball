@@ -117,11 +117,9 @@ body {
 }
 
 .logo {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800; /* THIS is the big difference */
+    font-family: "Kaushan Script", cursive;
     color: #fed136;
-    letter-spacing: 1.5px; /* tweak this */
-    font-size: 1rem; /* adjust to match navbar height */
+    font-size: 1.2rem;
     margin: 0;
 }
 
