@@ -1,0 +1,39 @@
+/* =====================
+ROOT STYLES
+===================== */
+
+:root {
+    /* Colors */
+}
+
+/* =====================
+GLOBAL STYLES
+===================== */
+
+/* =====================
+MOBILE STYLES
+===================== */
+.hero_section {
+    background-image: url(/images/hero/simple_hero_image.jpg);
+    background-size: contain;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.hero_container {
+}
+
+.hero_section p {
+    color: white;
+}
+
+.what_we_offer_container {
+}
+
+/* =====================
+TABLET STYLES
+===================== */
+
+/* =====================
+DESKTOP STYLES
+===================== */

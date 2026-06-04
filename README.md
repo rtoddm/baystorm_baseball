@@ -8,14 +8,14 @@ The project is being built as a freelance engagement and is actively maintained 
 
 ## Tech Stack
 
-- HTML
-- CSS
-- Bootstrap 5
-- JavaScript
+-   HTML
+-   CSS
+-   Bootstrap 5
+-   JavaScript
 
 ## Notes
 
-This project is based on a Bootstrap template, which has been customized and extended for client use.
+This project was originally based on a Bootstrap template but that template didn't suit the clients needs. It is now being built as a custom site although it may still utilize some bootstrap elements.
 
 ## Status
 
