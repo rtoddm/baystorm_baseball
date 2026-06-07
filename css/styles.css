@@ -21,9 +21,12 @@ ROOT STYLES
     /* Large Text */
     --fs-large: 1.125rem;
 
-    /* Small text */
-    --fs-small: 0.875rem;
+    /* Medium text */
+    --fs-medium: 0.875rem; /* 14px */
     --lh-sm: 1.4;
+
+    /* Small text */
+    --fs-small: 14px;
 
     /* Medium heading */
     --fs-md: 1.5rem; /* 24px */
@@ -62,13 +65,45 @@ body {
 
 body {
     font-family: var(--font-family);
-    background-color: var(--color-bg-black);
+    /* background-color: var(--color-bg-black); */
     color: var(--color-text-white);
 }
 
 /* =====================
 MOBILE STYLES
 ===================== */
+.navbar {
+    background-color: var(--color-bg-black);
+}
+
+.navbar-brand img {
+    width: 96px;
+    height: 42px;
+}
+
+.btn-outline-success {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.06rem;
+    height: 2rem;
+    color: var(--color-text-white);
+    border-width: 2px;
+    border-color: var(--color-primary);
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: var(--color-bg-grey);
+    margin-left: 75px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navbar-toggler {
+    border: none;
+    line-height: 2;
+}
+
 .hero_section {
 }
 
