@@ -136,7 +136,7 @@ MOBILE STYLES
     justify-content: center;
     align-items: center;
     border-width: 3px;
-    border-color: var(--color-primary);
+    border-color: rgb(89, 132, 154, 0.4);
     text-transform: uppercase;
     font-size: 12px;
     color: var(--color-text-white);
@@ -147,13 +147,18 @@ MOBILE STYLES
     padding: 0.25rem;
 }
 
+.bi-instagram,
+.bi-facebook {
+    padding: 5px;
+}
+
 /* ***** Hero Section **** */
 
 .hero-section {
     width: 100%;
     background-image: url("/images/hero/simple_hero_image.jpg");
     background-size: cover;
-    background-position: 62% center;
+    background-position: 65% center;
     background-repeat: no-repeat;
     padding: 70px 25px 50px 25px;
 }
@@ -207,6 +212,7 @@ MOBILE STYLES
     flex-direction: column;
     align-items: center;
     background-color: var(--color-bg-black);
+    padding-top: 20px;
 }
 
 .what-we-offer-container {
@@ -220,7 +226,7 @@ MOBILE STYLES
 
 .what-we-offer h2 {
     color: var(--color-text-white);
-    font-size: var(--fs-md);
+    font-size: 23px;
     text-transform: uppercase;
 }
 
@@ -240,6 +246,10 @@ MOBILE STYLES
 .card img {
     width: 100%;
     max-width: 8rem;
+}
+
+.card-2 img {
+    max-width: 7rem;
 }
 
 .card h3 {
@@ -299,6 +309,8 @@ MOBILE STYLES
     font-size: 20px;
 }
 
+/* ***** Sign Up **** */
+
 .sign-up {
     width: 100%;
     max-width: 21rem;
@@ -323,30 +335,38 @@ MOBILE STYLES
     color: var(--color-secondary);
 }
 
-form {
+.sign-up form {
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
 }
 
-form div {
+.sign-up form div {
     width: 100%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 .sign-up input {
     width: 100%;
     max-width: 22rem;
-    margin: 0;
-    padding: 0;
     border: 1px solid rgba(128, 128, 128, 0.3);
     background-color: var(--color-bg-black);
+    text-indent: 0.5rem;
 }
 
 input::placeholder {
     font-size: 0.75rem;
     color: rgb(130, 130, 130, 0.6);
-    padding: 0 0 0 1rem;
 }
 
 .sign-up button {
