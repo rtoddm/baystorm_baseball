@@ -36,6 +36,10 @@ ROOT STYLES
 GLOBAL STYLES
 ===================== */
 
+/* * {
+    outline: 1px solid red;
+} */
+
 *,
 *::before,
 *::after {
@@ -57,6 +61,7 @@ html,
 body {
     max-width: 100%;
     min-height: 100%;
+    background-color: var(--color-bg-black);
 }
 
 body {
@@ -320,7 +325,7 @@ MOBILE STYLES
     width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 12px;
 }
 
@@ -359,6 +364,7 @@ input::placeholder {
 /* ***** Site End Section **** */
 
 .footer {
+    border: 2px solid red;
     display: flex;
     justify-content: center;
     background-color: var(--color-bg-black);
@@ -517,8 +523,8 @@ TABLET STYLES
         max-width: 23rem;
     }
 
-    .btn-primary,
-    .btn-secondary {
+    .hero-section .btn-primary,
+    .hero-section .btn-secondary {
         align-self: flex-start;
         min-width: 28.68rem;
         height: 3rem;
@@ -527,17 +533,18 @@ TABLET STYLES
     /* ***** What We Offer **** */
 
     .what-we-offer {
+        /* border: 2px solid blue; */
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .what-we-offer-container {
-        /* outline: 2px solid red; */
+        /* outline: 2px solid green; */
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
         gap: 25px;
         max-width: 58rem;
+        margin: 0 auto;
     }
 
     .what-we-offer h2 {
@@ -545,7 +552,9 @@ TABLET STYLES
     }
 
     .card {
+        /* outline: 2px solid red; */
         flex-direction: row;
+        width: 50%;
     }
 
     .card-2 img {
@@ -555,7 +564,7 @@ TABLET STYLES
     .card-1,
     .card-2 {
         width: 100%;
-        max-width: 27.18rem;
+        max-width: 25rem;
         min-height: 225px;
     }
 
@@ -595,10 +604,10 @@ TABLET STYLES
     /* ***** Join Baystorm **** */
 
     .join-baystorm-container {
-        /* outline: 2px solid red; */
         flex-direction: row;
         justify-content: center;
-        max-width: 57.6rem;
+        gap: 25px;
+        max-width: 70rem;
     }
 
     .why-baystorm-works {
@@ -628,15 +637,64 @@ TABLET STYLES
     }
 
     .sign-up h3 {
-        outline: 2px solid red;
         max-width: auto;
         font-size: var(--fs-large);
+    }
+
+    .sign-up form {
+        padding-left: 20px;
+    }
+
+    .sign-up .btn-primary {
+        max-width: 22rem;
     }
 
     /* ***** Footer **** */
 
     .footer-container {
         max-width: 57rem;
+    }
+
+    .footer .contact-container {
+        outline: 2px solid blue;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        /* max-width: 875px; */
+    }
+
+    .footer .contact {
+        outline: 2px solid yellow;
+        width: 700px;
+    }
+
+    .footer-container img {
+        outline: 2px solid green;
+        width: 100%;
+        max-width: 150px;
+        max-height: auto;
+    }
+
+    .footer .contact-info {
+        outline: 2px solid aqua;
+        max-width: 302px;
+    }
+
+    .footer .contact-info h3 {
+        display: none;
+    }
+
+    .footer .follow-us {
+        outline: 2px red solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 315px;
+    }
+
+    .footer .follow-us h3 {
+        color: var(--color-text-white);
     }
 }
 
