@@ -191,6 +191,10 @@ MOBILE STYLES
     text-transform: uppercase;
 }
 
+.soon {
+    color: red;
+}
+
 /* ***** What We Offer **** */
 
 .what-we-offer {
@@ -495,7 +499,8 @@ input::placeholder {
 TABLET STYLES
 ===================== */
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+/* Global Tablet Styles */
+@media (min-width: 768px) and (max-width: 1439px) {
     /* ***** NavBar **** */
 
     .header-container {
@@ -640,15 +645,150 @@ TABLET STYLES
 
     .join-baystorm-container {
         flex-direction: row;
+        align-items: center;
         justify-content: center;
-        gap: 25px;
+        gap: 40px;
         max-width: 70rem;
+        padding-inline: 24px;
     }
 
+    .why-baystorm-works {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 32rem;
+    }
+
+    .why-baystorm-works h2 {
+        font-size: 28px;
+        font-weight: 700;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .why-baystorm-works span {
+        color: var(--color-secondary);
+    }
+
+    .why-baystorm-works p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding-left: 0;
+    }
+
+    .sign-up {
+        flex: 0 1 28rem;
+        border: none;
+    }
+
+    .sign-up .btn-primary {
+        max-width: 22rem;
+        width: 95%;
+    }
+
+    /* Footer */
+
+    .site-footer__bottom {
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .site-footer__nav {
+        width: 100%;
+        gap: 25px 28px;
+        justify-content: space-around;
+    }
+
+    .site-footer__nav a {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .site-footer__copyright {
+        font-size: 12px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* Small Tablet Footer Adjustments */
+@media (min-width: 768px) and (max-width: 899px) {
+    .site-footer__container {
+        max-width: 57rem;
+        padding-inline: 18px;
+    }
+
+    .site-footer__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 75px;
+    }
+
+    .site-footer__logo {
+        width: 11rem;
+        height: auto;
+        padding-right: 0;
+    }
+
+    .site-footer__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 75px;
+        width: auto;
+    }
+
+    .site-footer__contact {
+        flex: 0 1 auto;
+        width: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-left: 1px solid rgba(128, 128, 128, 0.3);
+        border-right: 1px solid rgba(128, 128, 128, 0.3);
+    }
+
+    .site-footer__contact h3 {
+        display: none;
+    }
+
+    .site-footer__contact-item address,
+    .site-footer__contact-item a,
+    .site-footer__contact-item i {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .site-footer__social {
+        flex: 0 0 auto;
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer__social h3 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .site-footer__social-links {
+        display: flex;
+        gap: 18px;
+    }
+
+    .site-footer__social-links i {
+        font-size: 24px;
+    }
+}
+
+/* Medium Tablet Footer Adjustments */
+@media screen and (min-width: 900px) and (max-width: 1439px) {
     /* ***** Footer **** */
 
     .site-footer__container {
         max-width: 57rem;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .site-footer__main {
@@ -657,31 +797,40 @@ TABLET STYLES
         width: 100%;
     }
 
-    .site-footer__contact {
-        /* outline: 2px solid green; */
-        width: 700px;
-        justify-content: space-evenly;
+    .site-footer__branding {
+        flex: 0 0 auto;
     }
 
     .site-footer__logo {
-        width: 100%;
+        width: clamp(11rem, 22vw, 16rem);
+        height: auto;
         margin: 0;
         padding-top: 0;
         padding-right: 25px;
     }
 
-    .site-footer__contact-info {
-        /* outline: 2px solid green; */
+    .site-footer__content {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
         width: 100%;
-        max-width: 50%;
+    }
+
+    .site-footer__contact {
+        width: auto;
+        flex: 1;
         padding-left: 50px;
-        padding-right: 20px;
-        border-right: 1px solid rgba(128, 128, 128, 0.3);
+        padding-right: 40px;
         border-left: 1px solid rgba(128, 128, 128, 0.3);
+        border-right: 1px solid rgba(128, 128, 128, 0.3);
+    }
+
+    .site-footer__contact-item address,
+    .site-footer__contact-item a,
+    .site-footer__contact-item i {
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .site-footer__contact-item {
@@ -694,30 +843,47 @@ TABLET STYLES
     }
 
     .site-footer__social {
-        /* outline: 2px solid yellow; */
+        width: auto;
+        min-width: 220px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 25%;
     }
 
     .site-footer__social h3 {
+        font-size: 26px;
         color: var(--color-text-white);
+    }
+
+    .site-footer__social-links i {
+        font-size: 28px;
     }
 }
 
-/* =====================
-LARGE TABLET STYLES
-===================== */
+/* Medium Tablet Join Baystorm Adjustment */
+@media (min-width: 850px) and (max-width: 1023px) {
+    .join-baystorm-container {
+        gap: 30px;
+    }
 
-@media screen and (min-width: 1024px) {
+    .why-baystorm-works h2 {
+        font-size: 32px;
+    }
+
+    .why-baystorm-works p {
+        font-size: 21px;
+    }
+}
+
+/* Large Tablet Adjustments */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     /* ***** Join Baystorm **** */
 
-    .why-baystorm-works {
+    /* .why-baystorm-works {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .why-baystorm-works h2 {
         font-size: 35px;
@@ -726,31 +892,9 @@ LARGE TABLET STYLES
         padding-bottom: 25px;
     }
 
-    .why-baystorm-works span {
-        color: var(--color-secondary);
-    }
-
     .why-baystorm-works p {
         font-size: 24px;
         padding-left: 10px;
-    }
-
-    .sign-up {
-        max-width: 26.5rem;
-        border: none;
-    }
-
-    .sign-up h3 {
-        max-width: auto;
-        font-size: var(--fs-large);
-    }
-
-    .sign-up form {
-        padding-left: 20px;
-    }
-
-    .sign-up .btn-primary {
-        max-width: 22rem;
     }
 }
 
