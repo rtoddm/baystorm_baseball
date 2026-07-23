@@ -36,10 +36,6 @@ ROOT STYLES
 GLOBAL STYLES
 ===================== */
 
-/* * {
-    outline: 1px solid red;
-} */
-
 *,
 *::before,
 *::after {
@@ -97,7 +93,7 @@ MOBILE STYLES
 
 .navbar-brand {
     margin-right: auto;
-    max-width: 120px;
+    max-width: 7.5rem;
 }
 
 .navbar-brand img {
@@ -106,9 +102,30 @@ MOBILE STYLES
     display: block;
 }
 
+.login-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.login-btn__soon {
+    flex: 0 1 auto;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+}
+
+.login-btn__text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
 .btn-outline-success {
-    width: 5.06rem;
-    height: 2rem;
+    min-height: 3.5rem;
     margin: 0;
     display: inline-flex;
     justify-content: center;
@@ -116,10 +133,9 @@ MOBILE STYLES
     border-width: 3px;
     border-color: rgba(89, 132, 154, 0.4);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--color-text-white);
 }
-
 .navbar-toggler {
     border: none;
     padding: 0.25rem;
@@ -127,7 +143,8 @@ MOBILE STYLES
 
 .bi-instagram,
 .bi-facebook {
-    padding: 5px;
+    color: var(--color-text-white);
+    padding: 0.3125rem;
 }
 
 /* ***** Hero Section **** */
@@ -138,7 +155,7 @@ MOBILE STYLES
     background-size: cover;
     background-position: 65% center;
     background-repeat: no-repeat;
-    padding: 70px 25px 50px 25px;
+    padding: 4.375rem 1.5625rem 3.125rem 1.5625rem;
 }
 
 .hero-container {
@@ -147,7 +164,7 @@ MOBILE STYLES
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .hero-image {
@@ -183,9 +200,14 @@ MOBILE STYLES
     background-color: var(--color-primary);
     text-transform: uppercase;
     border: none;
+    margin-bottom: 0.3125rem;
 }
 
 .btn-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.0625rem;
     background-color: var(--color-secondary);
     color: var(--color-bg-black);
     text-transform: uppercase;
@@ -202,7 +224,7 @@ MOBILE STYLES
     flex-direction: column;
     align-items: center;
     background-color: var(--color-bg-grey);
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .what-we-offer-container {
@@ -215,7 +237,7 @@ MOBILE STYLES
 
 .what-we-offer h2 {
     color: var(--color-text-white);
-    font-size: 23px;
+    font-size: 1.4375rem;
     text-transform: uppercase;
 }
 
@@ -228,8 +250,8 @@ MOBILE STYLES
     background-color: var(--color-bg-black);
     color: var(--color-text-white);
     border: 1px solid rgba(128, 128, 128, 0.3);
-    margin-bottom: 20px;
-    padding: 30px;
+    margin-bottom: 1.25rem;
+    padding: 1.875rem;
 }
 
 .card-content {
@@ -250,7 +272,7 @@ MOBILE STYLES
 .card h3 {
     max-width: 11ch;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
 }
 
@@ -261,7 +283,7 @@ MOBILE STYLES
 
 .card p {
     color: gray;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
 }
 
@@ -281,28 +303,28 @@ MOBILE STYLES
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 2.1875rem;
 }
 
-.join-baystorm h2 {
-    font-size: 20px;
+.why-baystorm-works h2 {
+    font-size: 1.25rem;
     text-transform: uppercase;
-    padding-left: 25px;
+    padding-left: 1.5625rem;
 }
 
 .why-baystorm-works {
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .why-baystorm-works p {
     color: rgb(128, 128, 128);
-    font-size: 14px;
-    margin: 3px;
+    font-size: 0.875rem;
+    margin: 0.1875rem;
 }
 
 .bi-check {
     color: var(--color-secondary);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* ***** Sign Up **** */
@@ -314,8 +336,8 @@ MOBILE STYLES
     flex-direction: column;
     align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.3);
-    margin-bottom: 25px;
-    padding: 0 5px 15px 5px;
+    margin-bottom: 1.5625rem;
+    padding: 0 0.3125rem 0.9375rem 0.3125rem;
 }
 
 .sign-up h3 {
@@ -323,8 +345,8 @@ MOBILE STYLES
     max-width: 28ch;
     font-size: var(--fs-small);
     text-align: center;
-    line-height: 20px;
-    margin-top: 15px;
+    line-height: 1.25rem;
+    margin-top: 0.9375rem;
 }
 
 .sign-up h3 span {
@@ -335,8 +357,7 @@ MOBILE STYLES
     width: 95%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .sign-up form div {
@@ -367,7 +388,7 @@ input::placeholder {
 
 .sign-up button {
     width: 95%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-weight: 700;
 }
 
@@ -377,7 +398,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     background-color: var(--color-bg-grey);
-    padding-bottom: 25px;
+    padding-bottom: 1.5625rem;
 }
 
 .site-footer__container {
@@ -402,13 +423,6 @@ input::placeholder {
     align-items: center;
 }
 
-/* .site-footer__logo {
-    height: 10rem;
-    width: auto;
-    margin: 0;
-    padding: 0;
-} */
-
 .site-footer__logo {
     height: auto;
     width: 9rem;
@@ -418,20 +432,20 @@ input::placeholder {
 .site-footer__contact {
     display: flex;
     flex-direction: column;
-    padding: 15px 15px 15px 25px;
+    padding: 0.9375rem 0.9375rem 0.9375rem 1.5625rem;
 }
 
 .site-footer__contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 12px;
+    gap: 0.5rem;
+    font-size: 0.75rem;
     color: var(--color-text-white);
 }
 
 .site-footer__contact-item address {
     margin-bottom: 0;
-    line-height: 20px;
+    line-height: 1.25rem;
     color: var(--color-text-white);
 }
 
@@ -440,31 +454,30 @@ input::placeholder {
 }
 
 .site-footer__contact-item i {
-    line-height: 20px;
+    line-height: 1.25rem;
     flex-shrink: 0;
 }
 
 .site-footer__contact h3 {
     color: var(--color-secondary);
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
 }
 
 .site-footer__social {
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .site-footer__social h3 {
-    font-size: 18px;
-    /* padding-left: 35px; */
+    font-size: 1.125rem;
     color: var(--color-secondary);
 }
 
 .site-footer__social a {
     color: var(--color-text-white);
-    padding: 0px 0px 0px 8px;
+    padding: 0rem 0rem 0rem 0.5rem;
 }
 
 .site-footer__bottom {
@@ -472,27 +485,27 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .site-footer__nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px 15px;
+    gap: 0.5rem 0.9375rem;
 }
 
 .site-footer__nav a {
-    font-size: 10px;
+    font-size: 0.625rem;
     color: var(--color-text-white);
     text-decoration: none;
 }
 
 .site-footer__copyright {
-    font-size: 10px;
+    font-size: 0.625rem;
     text-transform: uppercase;
     color: rgb(247, 247, 247, 0.4);
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 /* =====================
@@ -500,12 +513,12 @@ TABLET STYLES
 ===================== */
 
 /* Global Tablet Styles */
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) {
     /* ***** NavBar **** */
 
     .header-container {
         max-width: 59rem;
-        min-height: 95px;
+        min-height: 5.9375rem;
     }
 
     .navbar-brand img {
@@ -515,11 +528,10 @@ TABLET STYLES
 
     .btn-outline-success {
         width: 9rem;
-        height: 3.2rem;
         border-width: 5px;
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--color-primary);
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
 
     .navbar-toggler-icon {
@@ -570,42 +582,39 @@ TABLET STYLES
         height: 3rem;
     }
 
-    /* ***** What We Offer **** */
+    /* ***** Join Baystorm/What We Offer **** */
 
     .what-we-offer {
-        /* border: 2px solid blue; */
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .what-we-offer-container {
-        /* outline: 2px solid green; */
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px;
+        gap: 1.5625rem;
         max-width: 58rem;
         margin: 0 auto;
     }
 
     .what-we-offer h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .card {
-        /* outline: 2px solid red; */
         flex-direction: row;
         width: 50%;
     }
 
     .card-2 img {
-        max-height: 92px;
+        max-height: 5.75rem;
     }
 
     .card-1,
     .card-2 {
         width: 100%;
         max-width: 25rem;
-        min-height: 225px;
+        min-height: 14.0625rem;
     }
 
     .card-3 {
@@ -614,14 +623,14 @@ TABLET STYLES
         justify-content: center;
         width: 100%;
         max-width: 35.25rem;
-        min-height: 225px;
+        min-height: 14.0625rem;
     }
 
     .card-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
 
     .card img {
@@ -631,25 +640,25 @@ TABLET STYLES
 
     .card h3 {
         max-width: 25ch;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .card p {
         justify-content: center;
         text-align: left;
         max-width: 32ch;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
-    /* ***** Join Baystorm **** */
+    /* ***** Join Baystorm/Why Baystorm Works **** */
 
     .join-baystorm-container {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 2.5rem;
         max-width: 70rem;
-        padding-inline: 24px;
+        padding-inline: 1.5rem;
     }
 
     .why-baystorm-works {
@@ -659,10 +668,10 @@ TABLET STYLES
     }
 
     .why-baystorm-works h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 700;
         padding-left: 0;
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
     }
 
     .why-baystorm-works span {
@@ -670,17 +679,19 @@ TABLET STYLES
     }
 
     .why-baystorm-works p {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.5;
         padding-left: 0;
     }
+
+    /* ***** Sign Up ***** */
 
     .sign-up {
         flex: 0 1 28rem;
         border: none;
     }
 
-    .sign-up .btn-primary {
+    .sign-up button {
         max-width: 22rem;
         width: 95%;
     }
@@ -689,22 +700,22 @@ TABLET STYLES
 
     .site-footer__bottom {
         width: 100%;
-        padding-top: 24px;
+        padding-top: 1.5rem;
     }
 
     .site-footer__nav {
         width: 100%;
-        gap: 25px 28px;
+        gap: 1.5625rem 1.75rem;
         justify-content: space-around;
     }
 
     .site-footer__nav a {
-        font-size: 14px;
+        font-size: 0.875rem;
         padding-left: 0;
     }
 
     .site-footer__copyright {
-        font-size: 12px;
+        font-size: 0.75rem;
         text-align: center;
         padding-left: 0;
     }
@@ -714,14 +725,14 @@ TABLET STYLES
 @media (min-width: 768px) and (max-width: 899px) {
     .site-footer__container {
         max-width: 57rem;
-        padding-inline: 18px;
+        padding-inline: 1.125rem;
     }
 
     .site-footer__main {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 75px;
+        gap: 4.6875rem;
     }
 
     .site-footer__logo {
@@ -734,15 +745,15 @@ TABLET STYLES
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 75px;
+        gap: 4.6875rem;
         width: auto;
     }
 
     .site-footer__contact {
         flex: 0 1 auto;
         width: auto;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         border-left: 1px solid rgba(128, 128, 128, 0.3);
         border-right: 1px solid rgba(128, 128, 128, 0.3);
     }
@@ -754,8 +765,8 @@ TABLET STYLES
     .site-footer__contact-item address,
     .site-footer__contact-item a,
     .site-footer__contact-item i {
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 0.9375rem;
+        line-height: 1.375rem;
     }
 
     .site-footer__social {
@@ -767,28 +778,43 @@ TABLET STYLES
     }
 
     .site-footer__social h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         white-space: nowrap;
     }
 
     .site-footer__social-links {
         display: flex;
-        gap: 18px;
+        gap: 1.125rem;
     }
 
     .site-footer__social-links i {
-        font-size: 24px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium Tablet Join Baystorm Adjustment */
+@media (min-width: 850px) {
+    .join-baystorm-container {
+        gap: 1.875rem;
+    }
+
+    .why-baystorm-works h2 {
+        font-size: 2rem;
+    }
+
+    .why-baystorm-works p {
+        font-size: 1.3125rem;
     }
 }
 
 /* Medium Tablet Footer Adjustments */
-@media screen and (min-width: 900px) and (max-width: 1439px) {
+@media (min-width: 900px) {
     /* ***** Footer **** */
 
     .site-footer__container {
         max-width: 57rem;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .site-footer__main {
@@ -806,22 +832,22 @@ TABLET STYLES
         height: auto;
         margin: 0;
         padding-top: 0;
-        padding-right: 25px;
+        padding-right: 1.5625rem;
     }
 
     .site-footer__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
+        gap: 1.875rem;
         width: 100%;
     }
 
     .site-footer__contact {
         width: auto;
         flex: 1;
-        padding-left: 50px;
-        padding-right: 40px;
+        padding-left: 3.125rem;
+        padding-right: 2.5rem;
         border-left: 1px solid rgba(128, 128, 128, 0.3);
         border-right: 1px solid rgba(128, 128, 128, 0.3);
     }
@@ -829,13 +855,13 @@ TABLET STYLES
     .site-footer__contact-item address,
     .site-footer__contact-item a,
     .site-footer__contact-item i {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
     }
 
     .site-footer__contact-item {
-        padding-bottom: 10px;
-        font-size: 16px;
+        padding-bottom: 0.625rem;
+        font-size: 1rem;
     }
 
     .site-footer__contact h3 {
@@ -844,7 +870,7 @@ TABLET STYLES
 
     .site-footer__social {
         width: auto;
-        min-width: 220px;
+        min-width: 13.75rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -852,52 +878,314 @@ TABLET STYLES
     }
 
     .site-footer__social h3 {
-        font-size: 26px;
+        font-size: 1.625rem;
         color: var(--color-text-white);
     }
 
     .site-footer__social-links i {
-        font-size: 28px;
-    }
-}
-
-/* Medium Tablet Join Baystorm Adjustment */
-@media (min-width: 850px) and (max-width: 1023px) {
-    .join-baystorm-container {
-        gap: 30px;
-    }
-
-    .why-baystorm-works h2 {
-        font-size: 32px;
-    }
-
-    .why-baystorm-works p {
-        font-size: 21px;
+        font-size: 1.75rem;
     }
 }
 
 /* Large Tablet Adjustments */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) {
     /* ***** Join Baystorm **** */
 
-    /* .why-baystorm-works {
-        display: flex;
-        flex-direction: column;
-    } */
-
     .why-baystorm-works h2 {
-        font-size: 35px;
+        font-size: 2.1875rem;
         font-weight: 700;
         padding-left: 0;
-        padding-bottom: 25px;
+        padding-bottom: 1.5625rem;
     }
 
     .why-baystorm-works p {
-        font-size: 24px;
-        padding-left: 10px;
+        font-size: 1.5rem;
+        padding-left: 0.625rem;
+    }
+
+    .sign-up {
+        flex: 1 1 28rem;
+        border: none;
+    }
+
+    .sign-up h3 {
+        font-size: 1.125rem;
+    }
+
+    .sign-up button {
+        max-width: 22rem;
+        width: 95%;
     }
 }
 
 /* =====================
 DESKTOP STYLES
 ===================== */
+@media (min-width: 1200px) {
+    /* ***** NavBar ***** */
+    .header-container {
+        max-width: 84rem;
+        gap: 2rem;
+    }
+
+    .navbar .btn-outline-success {
+        order: 3;
+    }
+
+    .navbar-nav {
+        gap: 2rem;
+    }
+
+    .navbar-brand img {
+        height: 7rem;
+        width: auto;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .bi-instagram,
+    .bi-facebook {
+        font-size: 1.5625rem;
+    }
+
+    /* ***** Hero Section **** */
+    .hero-container {
+        max-width: 79rem;
+    }
+
+    .hero-container h1 {
+        font-size: 3.8rem;
+    }
+
+    #hero-paragraph {
+        max-width: 55rem;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    #hero-paragraph span:first-child {
+        width: 100%;
+        max-width: 60ch;
+        margin-bottom: 0.5rem;
+    }
+
+    #hero-paragraph span:nth-child(2) {
+        max-width: 30rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.25rem;
+        min-width: 20.68rem;
+        height: 4rem;
+        font-size: 1.3125rem;
+    }
+
+    /* Join Baystorm/What We Offer */
+
+    .what-we-offer h2 {
+        font-size: 2.25rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .what-we-offer-container {
+        width: 100%;
+        max-width: none;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 25rem;
+        height: 23.37rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.1875rem;
+    }
+
+    .card-content {
+        align-items: center;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    .card-2 img {
+        max-height: 7rem;
+        width: auto;
+    }
+
+    /* Join Baystorm/Why Baystorm Works */
+
+    .join-baystorm-container {
+        width: 100%;
+        max-width: none;
+        gap: 3rem;
+    }
+
+    .why-baystorm-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 46.62rem;
+    }
+
+    .why-baystorm-works__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .why-baystorm-works h2 {
+        padding-bottom: 0.9375rem;
+        letter-spacing: 0.125rem;
+    }
+
+    .why-baystorm-works p {
+        padding: 0;
+    }
+
+    .bi-check {
+        display: inline-block;
+        width: 2.5rem;
+        font-size: 2.1875rem;
+    }
+
+    /* ***** Sign Up ***** */
+
+    .sign-up {
+        flex: 0 1 40rem;
+        max-width: none;
+    }
+
+    .sign-up form {
+        width: 100%;
+    }
+
+    .sign-up form div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-up h3 {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    .sign-up h3 span {
+        color: var(--color-text-white);
+    }
+
+    .sign-up input {
+        width: 80%;
+        max-width: none;
+        height: 2.8125rem;
+    }
+
+    .sign-up button {
+        width: 80%;
+        height: auto;
+        max-width: none;
+        font-size: 1.5rem;
+    }
+
+    input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .site-footer__container {
+        width: 100%;
+        max-width: 90rem;
+        padding-inline: clamp(1rem, 2vw, 2rem);
+    }
+
+    .site-footer__main {
+        width: 100%;
+        align-items: center;
+        gap: clamp(1.25rem, 2.5vw, 2.5rem);
+    }
+
+    .site-footer__branding {
+        flex: 0 1 auto;
+    }
+
+    .site-footer__logo {
+        width: clamp(10rem, 15vw, 13rem);
+        padding-right: 0;
+    }
+
+    .site-footer__content {
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(1.25rem, 2vw, 2rem);
+    }
+
+    .site-footer__contact {
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: clamp(1.5rem, 3vw, 3rem);
+        padding: 0;
+    }
+
+    .site-footer__contact-item {
+        min-width: 0;
+    }
+
+    .site-footer__contact-item address,
+    .site-footer__contact-item a,
+    .site-footer__contact-item i {
+        font-size: clamp(1rem, 1.65vw, 1.4rem);
+        line-height: 2.5rem;
+    }
+
+    .site-footer__contact-item address {
+        white-space: nowrap;
+    }
+
+    .site-footer__contact-item i {
+        font-size: clamp(1.75rem, 2.5vw, 2.2rem);
+    }
+
+    .site-footer__social {
+        flex: 0 0 auto;
+        min-width: 7.5rem;
+        padding-bottom: 0;
+    }
+
+    .site-footer__social h3 {
+        font-size: clamp(1.25rem, 1.8vw, 1.625rem);
+        white-space: nowrap;
+        margin-bottom: 0.5rem;
+    }
+
+    .site-footer__social-links {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .site-footer__social-links i {
+        font-size: 2.1875rem;
+    }
+}

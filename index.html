@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta
+            name="description"
+            content="BayStorm Baseball provides structured hitting and pitching development for players in Baldwin County, Alabama."
+        />
+        <title>BayStorm | Player Development and Training</title>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -12,7 +16,6 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
         />
-        <link rel="stylesheet" href="/" />
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,13 +26,19 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-dark">
+        <nav
+            class="navbar navbar-expand-xl navbar-dark"
+            aria-label="Main Navigation"
+        >
             <div class="container-fluid header-container">
-                <a class="navbar-brand" href="#"
-                    ><img src="/images/logos/nav-logo.png" alt=""
+                <a class="navbar-brand" href="#home"
+                    ><img
+                        src="/images/logos/nav-logo.png"
+                        alt="BayStorm Baseball Home"
                 /></a>
-                <button class="btn btn-outline-success" type="submit">
-                    Login
+                <button class="btn btn-outline-success login-btn" type="button">
+                    <span class="login-btn__soon">Coming Soon!</span>
+                    <span class="login-btn__text">Login</span>
                 </button>
                 <button
                     class="navbar-toggler"
@@ -48,44 +57,14 @@
                     id="navbarSupportedContent"
                 >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#programs"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what-we-offer">
                                 Programs
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#training"
+                            <a class="nav-link" href="#join-baystorm"
                                 >Training</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pitching_lab"
-                                >Pitching Lab</a
                             >
                         </li>
                         <li class="nav-item">
@@ -97,15 +76,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true"
-                                >Disabled</a
-                            >
-                        </li> -->
                     </ul>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.instagram.com/?hl=en"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="Visit BayStorm Baseball on Instagram"
+                        >
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit BayStorm Baseball on Facebook"
+                        >
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -113,7 +102,7 @@
 
         <main>
             <!-- Hero Section -->
-            <section class="hero-section">
+            <section class="hero-section" id="home">
                 <div class="hero-container">
                     <img
                         class="hero-image"
@@ -121,10 +110,8 @@
                         alt=""
                     />
                     <h1>
-                        <p>
-                            Train With Purpose.
-                            <span>Play With Power.</span>
-                        </p>
+                        Train With Purpose.
+                        <span>Play With Power.</span>
                     </h1>
                     <p id="hero-paragraph">
                         <span
@@ -133,19 +120,21 @@
                         >
                         <span>Built on reps, structure, and real results.</span>
                     </p>
-                    <button type="button" class="btn btn-primary">
-                        Book Training
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                        <span class="soon">Coming Soon!</span>
-                        - Join Baystorm Program
-                    </button>
+                    <div class="hero-buttons">
+                        <button type="button" class="btn btn-primary">
+                            Book Training
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                            <span class="soon">Coming Soon!</span>
+                            Join BayStorm Program
+                        </button>
+                    </div>
                 </div>
             </section>
             <!-- End Hero Section -->
 
             <!-- What We Offer -->
-            <section class="what-we-offer">
+            <section id="what-we-offer" class="what-we-offer">
                 <h2>What We Offer</h2>
                 <div class="what-we-offer-container">
                     <article class="card card-1">
@@ -191,27 +180,29 @@
             </section>
             <!-- End What We Offer -->
 
-            <!-- Join Baystorm/Why Baystorm Works -->
-            <section class="join-baystorm">
+            <!-- Join BayStorm/Why BayStorm Works -->
+            <section id="join-baystorm" class="join-baystorm">
                 <div class="join-baystorm-container">
                     <section class="why-baystorm-works">
-                        <h2>Why Baystorm <span>Works</span></h2>
-                        <p>
-                            <i class="bi bi-check"></i>
-                            More reps than traditional lessons
-                        </p>
-                        <p>
-                            <i class="bi bi-check"></i>
-                            Small groups - better development
-                        </p>
-                        <p>
-                            <i class="bi bi-check"></i>
-                            Structured progression system
-                        </p>
-                        <p>
-                            <i class="bi bi-check"></i>
-                            Built for real game performance
-                        </p>
+                        <div class="why-baystorm-works__content">
+                            <h2>Why BayStorm <span>Works</span></h2>
+                            <p>
+                                <i class="bi bi-check" aria-hidden="true"></i>
+                                More reps than traditional lessons
+                            </p>
+                            <p>
+                                <i class="bi bi-check" aria-hidden="true"></i>
+                                Small groups - better development
+                            </p>
+                            <p>
+                                <i class="bi bi-check" aria-hidden="true"></i>
+                                Structured progression system
+                            </p>
+                            <p>
+                                <i class="bi bi-check" aria-hidden="true"></i>
+                                Built for real game performance
+                            </p>
+                        </div>
                     </section>
 
                     <section class="sign-up">
@@ -227,6 +218,7 @@
                                 <input
                                     type="text"
                                     id="player-name"
+                                    name="playerName"
                                     placeholder="Player Name"
                                 />
                             </div>
@@ -237,6 +229,7 @@
                                 <input
                                     type="text"
                                     id="parent-name"
+                                    name="parentName"
                                     placeholder="Parent Name"
                                 />
                             </div>
@@ -245,31 +238,34 @@
                                     >Phone Number</label
                                 >
                                 <input
-                                    type="text"
+                                    type="tel"
                                     id="phone"
+                                    name="phone"
                                     placeholder="Phone"
                                 />
                             </div>
                             <div>
                                 <label for="email" class="sr-only">Email</label>
                                 <input
-                                    type="text"
+                                    type="email"
                                     id="email"
+                                    name="email"
                                     placeholder="Email"
                                 />
                             </div>
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                id="sign-up-button"
+                            >
+                                Join BayStorm Training
+                            </button>
                         </form>
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            id="sign-up-button"
-                        >
-                            Join Baystorm Training
-                        </button>
                     </section>
                 </div>
             </section>
-            <!-- Join Baystorm/Why Baystorm Works Ends -->
+            <!-- Join BayStorm/Why BayStorm Works Ends -->
 
             <!-- Footer Section -->
             <footer class="site-footer">
@@ -279,16 +275,19 @@
                             <img
                                 class="site-footer__logo"
                                 src="/images/logos/nav-logo.png"
-                                alt=""
+                                alt="BayStorm Baseball"
                             />
                         </div>
 
                         <div class="site-footer__content">
-                            <section class="site-footer__contact">
+                            <section id="contact" class="site-footer__contact">
                                 <h3>Contact</h3>
 
                                 <div class="site-footer__contact-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <i
+                                        class="bi bi-geo-alt-fill"
+                                        aria-hidden="true"
+                                    ></i>
 
                                     <address>
                                         Fairhope Athletic Complex <br />
@@ -296,17 +295,27 @@
                                         Fairhope, AL 36532
                                     </address>
                                 </div>
+                                <div class="site-footer__contact-details">
+                                    <div class="site-footer__contact-item">
+                                        <i
+                                            class="bi bi-envelope-fill"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <a
+                                            href="mailto:info@baystormbaseball.com"
+                                            >info@baystormbaseball.com</a
+                                        >
+                                    </div>
 
-                                <div class="site-footer__contact-item">
-                                    <i class="bi bi-envelope-fill"></i>
-                                    <a href="mailto:info@baystormbaseball.com"
-                                        >info@baystormbaseball.com</a
-                                    >
-                                </div>
-
-                                <div class="site-footer__contact-item">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <a href="tel:2515551234">(251) 555-1234</a>
+                                    <div class="site-footer__contact-item">
+                                        <i
+                                            class="bi bi-telephone-fill"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <a href="tel:3347918521"
+                                            >(334) 791-8521</a
+                                        >
+                                    </div>
                                 </div>
                             </section>
                             <section class="site-footer__social">
@@ -314,10 +323,23 @@
                                 <div class="site-footer__social-links">
                                     <a
                                         href="https://www.instagram.com/accounts/login/?hl=en"
-                                        ><i class="bi bi-instagram"></i
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        aria-label="Visit BayStorm Baseball on Instagram"
+                                        ><i
+                                            class="bi bi-instagram"
+                                            aria-hidden="true"
+                                        ></i
                                     ></a>
-                                    <a href="https://www.facebook.com/"
-                                        ><i class="bi bi-facebook"></i
+                                    <a
+                                        href="https://www.facebook.com/"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        aria-label="Visit BayStorm Baseball on Facebook"
+                                        ><i
+                                            class="bi bi-facebook"
+                                            aria-hidden="true"
+                                        ></i
                                     ></a>
                                 </div>
                             </section>
@@ -325,20 +347,25 @@
                     </div>
 
                     <div class="site-footer__bottom">
-                        <nav class="site-footer__nav">
+                        <nav
+                            class="site-footer__nav"
+                            aria-label="Footer Navigation"
+                        >
                             <a href="#home">Home</a>
-                            <a href="#training">Training</a>
-                            <a href="#pitching_lab">Pitching Lab</a>
+                            <a href="#join-baystorm">Training</a>
                             <a href="#heat">Heat</a>
                             <a href="#about">About</a>
                             <a href="#contact">Contact</a>
                         </nav>
-                        <aside class="site-footer__copyright">
+                        <div class="site-footer__copyright">
                             <p>
-                                <i class="bi bi-c-circle"></i> 2024 Baystorm
-                                Baseball All Rights Reserved
+                                <i
+                                    class="bi bi-c-circle"
+                                    aria-hidden="true"
+                                ></i>
+                                2026 BayStorm Baseball All Rights Reserved
                             </p>
-                        </aside>
+                        </div>
                     </div>
                 </div>
             </footer>
