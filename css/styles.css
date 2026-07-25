@@ -93,6 +93,12 @@ input {
     cursor: not-allowed !important;
 }
 
+.nav-link.is-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: default;
+}
+
 .btn-primary {
     --bs-btn-bg: var(--color-primary);
     --bs-btn-border-color: var(--color-primary);
@@ -478,6 +484,7 @@ MOBILE STYLES
     max-width: 22rem;
     border: 1px solid rgba(128, 128, 128, 0.3);
     background-color: var(--color-bg-black);
+    color: rgba(130, 130, 130, 0.6);
     text-indent: 0.5rem;
 }
 
