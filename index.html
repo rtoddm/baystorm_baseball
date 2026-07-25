@@ -36,7 +36,10 @@
                         src="images/logos/nav-logo.png"
                         alt="BayStorm Baseball Home"
                 /></a>
-                <button class="btn btn-outline-success login-btn" type="button">
+                <button
+                    class="btn btn-outline-success login-btn is-disabled"
+                    type="button"
+                >
                     <span class="login-btn__soon">Coming Soon</span>
                     <span class="login-btn__text login-btn__mobile-text"
                         >Login</span
@@ -129,7 +132,10 @@
                         <button type="button" class="btn btn-primary">
                             Book Training
                         </button>
-                        <button type="button" class="btn btn-secondary">
+                        <button
+                            type="button"
+                            class="btn btn-secondary is-disabled"
+                        >
                             <span class="soon">Coming Soon</span>
                             Join BayStorm Program
                         </button>
@@ -215,7 +221,23 @@
                             <span>Sign up today and give your player</span> a
                             development advantage.
                         </h3>
-                        <form action="">
+                        <form
+                            name="contact"
+                            method="post"
+                            data-netlify="true"
+                            netlify-honeypot="bot-field"
+                        >
+                            <input
+                                type="hidden"
+                                name="form-name"
+                                value="contact"
+                            />
+                            <p hidden>
+                                <label>
+                                    Don't fill this out if you're human:
+                                    <input name="bot-field" />
+                                </label>
+                            </p>
                             <div>
                                 <label for="player-name" class="sr-only"
                                     >Player Name</label
@@ -225,6 +247,9 @@
                                     id="player-name"
                                     name="playerName"
                                     placeholder="Player Name"
+                                    minlength="2"
+                                    maxlength="50"
+                                    required
                                 />
                             </div>
                             <div>
@@ -236,6 +261,10 @@
                                     id="parent-name"
                                     name="parentName"
                                     placeholder="Parent Name"
+                                    minlength="2"
+                                    maxlength="50"
+                                    autocomplete="name"
+                                    required
                                 />
                             </div>
                             <div>
@@ -247,6 +276,8 @@
                                     id="phone"
                                     name="phone"
                                     placeholder="Phone"
+                                    autocomplete="tel"
+                                    required
                                 />
                             </div>
                             <div>
@@ -256,11 +287,12 @@
                                     id="email"
                                     name="email"
                                     placeholder="Email"
+                                    required
                                 />
                             </div>
 
                             <button
-                                type="button"
+                                type="submit"
                                 class="btn btn-primary"
                                 id="sign-up-button"
                             >
@@ -295,9 +327,16 @@
                                     ></i>
 
                                     <address>
-                                        Fairhope Athletic Complex <br />
-                                        100 Ferndale Cir <br />
-                                        Fairhope, AL 36532
+                                        <a
+                                            href=""
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="site-footer__address-link"
+                                        >
+                                            Fairhope Athletic Complex <br />
+                                            100 Ferndale Cir <br />
+                                            Fairhope, AL 36532
+                                        </a>
                                     </address>
                                 </div>
                                 <div class="site-footer__contact-details">
@@ -308,6 +347,7 @@
                                         ></i>
                                         <a
                                             href="mailto:info@baystormbaseball.com"
+                                            class="site-footer__email-link"
                                             >info@baystormbaseball.com</a
                                         >
                                     </div>
@@ -317,7 +357,9 @@
                                             class="bi bi-telephone-fill"
                                             aria-hidden="true"
                                         ></i>
-                                        <a href="tel:3347918521"
+                                        <a
+                                            href="tel:3347918521"
+                                            class="site-footer__phone-link"
                                             >(334) 791-8521</a
                                         >
                                     </div>

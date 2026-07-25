@@ -88,6 +88,11 @@ input {
 }
 
 /* Primary buttons */
+
+.is-disabled {
+    cursor: not-allowed !important;
+}
+
 .btn-primary {
     --bs-btn-bg: var(--color-primary);
     --bs-btn-border-color: var(--color-primary);
@@ -102,6 +107,7 @@ input {
 }
 
 /* Secondary buttons */
+
 .btn-secondary {
     --bs-btn-bg: var(--color-secondary);
     --bs-btn-border-color: var(--color-secondary);
@@ -119,6 +125,7 @@ input {
 }
 
 /* Navbar login button */
+
 .login-btn.btn-outline-success {
     --bs-btn-color: var(--color-text-white);
     --bs-btn-border-color: rgba(89, 132, 154, 0.4);
@@ -528,6 +535,16 @@ input::placeholder {
     padding: 0.9375rem 0.9375rem 0.9375rem 1.5625rem;
 }
 
+.site-footer__address-link:hover,
+.site-footer__address-link:focus-visible,
+.site-footer__phone-link:hover,
+.site-footer__phone-link:focus-visible,
+.site-footer__email-link:hover,
+.site-footer__email-link:focus-visible {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
 .site-footer__contact-item {
     display: flex;
     align-items: flex-start;
@@ -606,6 +623,7 @@ TABLET STYLES
 ===================== */
 
 /* Global Tablet Styles */
+
 @media (min-width: 768px) {
     /* ***** NavBar **** */
 
@@ -833,6 +851,7 @@ TABLET STYLES
 }
 
 /* Small Tablet Footer Adjustments */
+
 @media (min-width: 768px) and (max-width: 899px) {
     .site-footer__container {
         max-width: 57rem;
@@ -904,6 +923,7 @@ TABLET STYLES
 }
 
 /* Medium Tablet Join Baystorm Adjustment */
+
 @media (min-width: 850px) {
     .join-baystorm-container {
         gap: 1.875rem;
@@ -919,6 +939,7 @@ TABLET STYLES
 }
 
 /* Medium Tablet Footer Adjustments */
+
 @media (min-width: 900px) {
     /* ***** Footer **** */
 
@@ -999,6 +1020,7 @@ TABLET STYLES
 }
 
 /* Large Tablet Adjustments */
+
 @media (min-width: 1024px) {
     /* ***** Join Baystorm **** */
 
@@ -1032,6 +1054,7 @@ TABLET STYLES
 /* =====================
 DESKTOP STYLES
 ===================== */
+
 @media (min-width: 1200px) {
     /* ***** NavBar ***** */
     .header-container {
@@ -1081,6 +1104,7 @@ DESKTOP STYLES
     }
 
     /* ***** Hero Section **** */
+
     .hero-container {
         max-width: 79rem;
     }
