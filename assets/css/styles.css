@@ -257,7 +257,7 @@ MOBILE STYLES
 
 .hero-section {
     width: 100%;
-    background-image: url("../images/hero/simple_hero_image.jpg");
+    background-image: url("/assets/images/home/baystorm-hero-image.jpg");
     background-size: cover;
     background-position: 65% center;
     background-repeat: no-repeat;
