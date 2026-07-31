@@ -229,6 +229,10 @@ body {
     padding: 0.3125rem;
 }
 
+/* =====================
+MOBILE STYLES
+===================== */
+
 @media (min-width: 768px) {
     .header-container {
         max-width: 59rem;
@@ -261,6 +265,10 @@ body {
         height: 3rem;
     }
 }
+
+/* =====================
+DESKTOP STYLES
+===================== */
 
 @media (min-width: 1200px) {
     /* ***** NavBar ***** */
