@@ -240,9 +240,14 @@ MOBILE STYLES
         min-height: 5.9375rem;
     }
 
-    .navbar-brand img {
+    /* .navbar-brand img {
         width: 8rem;
         height: 6rem;
+    } */
+
+    .navbar-brand img {
+        width: 6rem;
+        height: 4rem;
     }
 
     .login-btn.btn-outline-success {

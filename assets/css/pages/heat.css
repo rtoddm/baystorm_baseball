@@ -6,6 +6,10 @@
 MOBILE STYLES
 ===================== */
 
+/* * {
+    outline: green solid 2px;
+} */
+
 nav img {
     max-width: 10rem;
     height: auto;
@@ -408,10 +412,15 @@ TABLET STYLES
 @media (min-width: 768px) {
     /* ***** Hero Section **** */
 
+    * {
+        outline: red solid 2px;
+    }
+
     .hero {
         width: 100%;
         max-width: 1024px;
-        margin: 0.5rem;
+        margin-inline: 0.5rem;
+        padding-block: 1rem;
     }
 
     .hero__container {
@@ -429,7 +438,7 @@ TABLET STYLES
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: 700;
         line-height: 1.1;
     }
@@ -437,12 +446,14 @@ TABLET STYLES
     .hero p:first-of-type {
         width: 100%;
         max-width: 32.875rem;
-        font-size: 1.25rem;
+        font-size: 1.52rem;
         margin-bottom: 0;
     }
 
     .hero p:nth-of-type(2) {
-        font-size: 0.88rem;
+        font-size: 0.85rem;
+        max-width: 30.5rem;
+        margin-top: 0.625rem;
     }
 
     .hero__buttons {
@@ -605,5 +616,48 @@ TABLET STYLES
     .contact__form input {
         width: 100%;
         max-width: 37rem;
+    }
+}
+
+/* Wider tablet refinements */
+@media (min-width: 875px) {
+    * {
+        outline: 2px solid blue;
+    }
+    .hero__container {
+        max-width: 40rem;
+    }
+
+    .hero__content {
+        max-width: 37.87rem;
+    }
+
+    .hero__content img {
+        max-width: 21.625rem;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p:first-of-type {
+        max-width: 33.875rem;
+        font-size: 1.55rem;
+    }
+
+    .hero p:nth-of-type(2) {
+        font-size: 1rem;
+    }
+
+    .hero__buttons button {
+        max-width: 15.125rem;
+        min-height: 2.76rem;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 1200px) {
+    * {
+        outline: 2px solid yellow;
     }
 }
