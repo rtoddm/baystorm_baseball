@@ -6,10 +6,6 @@
 MOBILE STYLES
 ===================== */
 
-/* * {
-    outline: green solid 2px;
-} */
-
 nav img {
     max-width: 10rem;
     height: auto;
@@ -121,11 +117,13 @@ nav img {
 }
 
 .why-baystorm-heat__image {
-    background-image: url(/assets/images/heat/why-baystorm-background.png);
-    min-height: 7.93rem;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    max-width: 25rem;
+    aspect-ratio: 2.1 / 1.2;
+
+    background-image: url(/assets/images/heat/why-baystorm-background.png);
+    background-size: contain;
+    background-position: center bottom;
     background-repeat: no-repeat;
 }
 
@@ -140,6 +138,8 @@ nav img {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.125rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0;
 }
 
 .whats-included__cards {
@@ -189,7 +189,7 @@ nav img {
 .whats-included__icon {
     width: 2rem;
     height: auto;
-    transform: translateY(-7px);
+    transform: translateY(-0.4375rem);
 }
 
 .whats-included__content {
@@ -409,17 +409,12 @@ nav img {
 TABLET STYLES
 ===================== */
 
-@media (min-width: 768px) {
+@media (min-width: 675px) {
     /* ***** Hero Section **** */
-
-    * {
-        outline: red solid 2px;
-    }
 
     .hero {
         width: 100%;
-        max-width: 1024px;
-        margin-inline: 0.5rem;
+        margin-inline: auto;
         padding-block: 1rem;
     }
 
@@ -439,8 +434,6 @@ TABLET STYLES
 
     .hero h1 {
         font-size: 2.3rem;
-        font-weight: 700;
-        line-height: 1.1;
     }
 
     .hero p:first-of-type {
@@ -470,8 +463,14 @@ TABLET STYLES
     }
 
     /* ***** Why BayStorm Heat **** */
+
     .why-baystorm-heat {
         width: 100%;
+        background-image: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
+            url("/assets/images/heat/heat-hero-background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .why-baystorm-heat__heading {
@@ -486,16 +485,22 @@ TABLET STYLES
 
     .why-baystorm-heat__image {
         width: 100%;
-        height: 26.56rem;
-        background-image: url(/assets/images/heat/why-baystorm-background.png);
+        max-width: 53rem;
+        aspect-ratio: 2.2 / 1.2;
+
+        background-image: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),
+            url("/assets/images/heat/why-baystorm-background.png");
         background-size: cover;
         background-position: center bottom;
         background-repeat: no-repeat;
+
+        box-shadow: inset 2.5rem 0 2.5rem -2rem rgb(0 0 0 / 80%),
+            inset -2.5rem 0 2.5rem -2rem rgb(0 0 0 / 80%);
     }
 
     /* ***** What's Included **** */
     .whats-included {
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
 
     .whats-included h2 {
@@ -533,7 +538,7 @@ TABLET STYLES
     .whats-included__media img {
         width: 100%;
         height: 11rem;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
     }
 
@@ -553,6 +558,11 @@ TABLET STYLES
 
     /* ***** Cost & Details **** */
     .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
         background-image: linear-gradient(
                 rgba(0, 0, 0, 0.55),
                 rgba(0, 0, 0, 0.55)
@@ -597,7 +607,7 @@ TABLET STYLES
         width: 100%;
         max-width: 64rem;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     .contact__content {
@@ -619,11 +629,23 @@ TABLET STYLES
     }
 }
 
-/* Wider tablet refinements */
-@media (min-width: 875px) {
-    * {
-        outline: 2px solid blue;
+/* Larger Tablet Refinements */
+@media (min-width: 750px) {
+    .cost__details {
+        max-width: 34rem;
     }
+
+    .cost__price {
+        font-size: 3rem;
+    }
+
+    .cost__list {
+        padding-inline: 1rem;
+    }
+}
+
+/* Wider Tablet Refinements */
+@media (min-width: 875px) {
     .hero__container {
         max-width: 40rem;
     }
@@ -652,12 +674,5 @@ TABLET STYLES
     .hero__buttons button {
         max-width: 15.125rem;
         min-height: 2.76rem;
-    }
-}
-
-/* Desktop Layout */
-@media (min-width: 1200px) {
-    * {
-        outline: 2px solid yellow;
     }
 }

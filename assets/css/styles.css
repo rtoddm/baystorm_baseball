@@ -71,6 +71,11 @@ input {
     outline-offset: 3px;
 }
 
+:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
 /* Disabled States */
 
 .is-disabled {
@@ -228,6 +233,11 @@ body {
 .bi-facebook {
     color: var(--color-text-white);
     padding: 0.3125rem;
+}
+
+.social-icons a {
+    color: none;
+    text-decoration: none;
 }
 
 /* =====================
