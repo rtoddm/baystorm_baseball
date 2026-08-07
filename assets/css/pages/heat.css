@@ -2,6 +2,10 @@
     --color-heat-gold: rgb(183, 153, 104);
 }
 
+/* =====================
+MOBILE STYLES
+===================== */
+
 nav img {
     max-width: 10rem;
     height: auto;
@@ -13,7 +17,8 @@ nav img {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(/assets/images/heat/heat-hero-background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+        url("/assets/images/heat/heat-hero-background.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 1.5625rem;
@@ -112,11 +117,13 @@ nav img {
 }
 
 .why-baystorm-heat__image {
-    background-image: url(/assets/images/heat/why-baystorm-background.png);
-    min-height: 7.93rem;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    max-width: 25rem;
+    aspect-ratio: 2.1 / 1.2;
+
+    background-image: url(/assets/images/heat/why-baystorm-background.png);
+    background-size: contain;
+    background-position: center bottom;
     background-repeat: no-repeat;
 }
 
@@ -131,6 +138,8 @@ nav img {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.125rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0;
 }
 
 .whats-included__cards {
@@ -180,7 +189,7 @@ nav img {
 .whats-included__icon {
     width: 2rem;
     height: auto;
-    transform: translateY(-7px);
+    transform: translateY(-0.4375rem);
 }
 
 .whats-included__content {
@@ -258,14 +267,18 @@ nav img {
     position: relative;
     display: flex;
     flex: 1 1 25%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 0.25rem;
     min-width: 0;
     padding-inline: 0.35rem;
     font-size: 0.625rem;
     line-height: 1.35;
-    text-align: center;
+}
+
+.cost__list li span {
+    width: 6.5rem;
+    text-align: left;
 }
 
 .cost__list li::before {
@@ -389,5 +402,277 @@ nav img {
 
     .whats-included__content ul {
         font-size: 0.5rem;
+    }
+}
+
+/* =====================
+TABLET STYLES
+===================== */
+
+@media (min-width: 675px) {
+    /* ***** Hero Section **** */
+
+    .hero {
+        width: 100%;
+        margin-inline: auto;
+        padding-block: 1rem;
+    }
+
+    .hero__container {
+        max-width: 32.87rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero__content {
+        max-width: 32.87rem;
+    }
+
+    .hero__content img {
+        width: 100%;
+        max-width: 19.625rem;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero p:first-of-type {
+        width: 100%;
+        max-width: 32.875rem;
+        font-size: 1.52rem;
+        margin-bottom: 0;
+    }
+
+    .hero p:nth-of-type(2) {
+        font-size: 0.85rem;
+        max-width: 30.5rem;
+        margin-top: 0.625rem;
+    }
+
+    .hero__buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__buttons button {
+        width: 100%;
+        max-width: 14.125rem;
+        min-height: 2.56rem;
+        padding-block: 0.125rem;
+    }
+
+    /* ***** Why BayStorm Heat **** */
+
+    .why-baystorm-heat {
+        width: 100%;
+        background-image: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
+            url("/assets/images/heat/heat-hero-background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .why-baystorm-heat__heading {
+        width: 100%;
+        max-width: 25.43rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .why-baystorm-heat__heading h2 {
+        font-size: 2rem;
+    }
+
+    .why-baystorm-heat__image {
+        width: 100%;
+        max-width: 53rem;
+        aspect-ratio: 2.2 / 1.2;
+
+        background-image: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),
+            url("/assets/images/heat/why-baystorm-background.png");
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+
+        box-shadow: inset 2.5rem 0 2.5rem -2rem rgb(0 0 0 / 80%),
+            inset -2.5rem 0 2.5rem -2rem rgb(0 0 0 / 80%);
+    }
+
+    /* ***** What's Included **** */
+    .whats-included {
+        margin-bottom: 0.9375rem;
+    }
+
+    .whats-included h2 {
+        font-size: 1.65rem;
+        margin-top: 0.9375rem;
+        margin-bottom: 0;
+    }
+
+    .whats-included__cards {
+        flex-direction: row;
+        width: 100%;
+        max-width: 50.9375rem;
+    }
+
+    .whats-included__card {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+
+    .whats-included__card:not(:last-child) {
+        border-right: 1px solid rgb(128 128 128 / 25%);
+    }
+
+    .whats-included h3 {
+        font-size: 1.15rem;
+        text-align: center;
+    }
+
+    .whats-included__media {
+        width: 100%;
+        max-width: 16.125rem;
+    }
+
+    .whats-included__media img {
+        width: 100%;
+        height: 11rem;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .whats-included__icon-column {
+        display: none;
+    }
+
+    .whats-included__content {
+        align-items: center;
+        width: 100%;
+        max-height: 12.1875rem;
+    }
+
+    .whats-included ul {
+        font-size: 0.66rem;
+    }
+
+    /* ***** Cost & Details **** */
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ),
+            url("/assets/images/heat/heat-hero-background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cost {
+        justify-content: center;
+        width: 100%;
+        max-width: 64rem;
+        max-height: 14.375rem;
+
+        padding: 0.9375rem;
+    }
+
+    .cost h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .cost h2 span {
+        color: var(--color-heat-gold);
+    }
+
+    .cost__details {
+        background-color: var(--color-bg-black);
+        width: 100%;
+        max-width: 28.75rem;
+    }
+
+    .cost__list li:not(:last-child)::after {
+        display: none;
+    }
+
+    /* ***** Contact **** */
+    .contact {
+        width: 100%;
+        max-width: 64rem;
+        align-items: center;
+        margin-bottom: 1.875rem;
+    }
+
+    .contact__content {
+        width: 100%;
+        max-width: 33.3125rem;
+    }
+
+    .contact__social-icons {
+        max-width: 16rem;
+    }
+
+    .contact__form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact__form input {
+        width: 100%;
+        max-width: 37rem;
+    }
+}
+
+/* Larger Tablet Refinements */
+@media (min-width: 750px) {
+    .cost__details {
+        max-width: 34rem;
+    }
+
+    .cost__price {
+        font-size: 3rem;
+    }
+
+    .cost__list {
+        padding-inline: 1rem;
+    }
+}
+
+/* Wider Tablet Refinements */
+@media (min-width: 875px) {
+    .hero__container {
+        max-width: 40rem;
+    }
+
+    .hero__content {
+        max-width: 37.87rem;
+    }
+
+    .hero__content img {
+        max-width: 21.625rem;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p:first-of-type {
+        max-width: 33.875rem;
+        font-size: 1.55rem;
+    }
+
+    .hero p:nth-of-type(2) {
+        font-size: 1rem;
+    }
+
+    .hero__buttons button {
+        max-width: 15.125rem;
+        min-height: 2.76rem;
     }
 }

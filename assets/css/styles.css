@@ -71,6 +71,11 @@ input {
     outline-offset: 3px;
 }
 
+:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
 /* Disabled States */
 
 .is-disabled {
@@ -230,6 +235,11 @@ body {
     padding: 0.3125rem;
 }
 
+.social-icons a {
+    color: none;
+    text-decoration: none;
+}
+
 /* =====================
 MOBILE STYLES
 ===================== */
@@ -240,9 +250,14 @@ MOBILE STYLES
         min-height: 5.9375rem;
     }
 
-    .navbar-brand img {
+    /* .navbar-brand img {
         width: 8rem;
         height: 6rem;
+    } */
+
+    .navbar-brand img {
+        width: 6rem;
+        height: 4rem;
     }
 
     .login-btn.btn-outline-success {
