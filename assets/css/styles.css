@@ -1,7 +1,3 @@
-/* =====================
-ROOT STYLES
-===================== */
-
 :root {
     /* COLORS */
     --color-primary: rgb(89, 132, 154);
@@ -69,11 +65,6 @@ input {
 .nav-link:focus-visible {
     outline: 3px solid var(--color-secondary);
     outline-offset: 3px;
-}
-
-:focus-visible {
-    outline: 2px solid var(--color-secondary);
-    outline-offset: 2px;
 }
 
 /* Disabled States */
@@ -236,12 +227,11 @@ body {
 }
 
 .social-icons a {
-    color: none;
     text-decoration: none;
 }
 
 /* =====================
-MOBILE STYLES
+TABLET NAVBAR STYLES
 ===================== */
 
 @media (min-width: 768px) {
@@ -250,14 +240,9 @@ MOBILE STYLES
         min-height: 5.9375rem;
     }
 
-    /* .navbar-brand img {
+    .navbar-brand img {
         width: 8rem;
         height: 6rem;
-    } */
-
-    .navbar-brand img {
-        width: 6rem;
-        height: 4rem;
     }
 
     .login-btn.btn-outline-success {
@@ -289,8 +274,18 @@ DESKTOP STYLES
 @media (min-width: 1200px) {
     /* ***** NavBar ***** */
     .header-container {
-        max-width: 84rem;
-        gap: 2rem;
+        width: 100%;
+        max-width: 95rem;
+        gap: 0;
+    }
+
+    .navbar-brand {
+        margin-right: 5rem;
+        flex-shrink: 0;
+    }
+
+    .navbar-collapse {
+        flex-grow: 1;
     }
 
     .navbar .btn-outline-success {
